@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&family=Righteous&family=Ubuntu+Condensed&display=swap');
 
 body,html {
-
+  background-image: url('background-test.png');
   font-family: 'Righteous', cursive;
   color: white;
   box-sizing: border-box;
@@ -14,7 +14,7 @@ body,html {
 h1 {
   font-family: 'Pathway Gothic One', sans-serif;
   font-size: 20vw;
-  text-shadow: 2px 2px 8px #e518f0;
+  text-shadow: 2px 2px 5px #e518f0;
   color: #c8a9e8;
   text-align: center;
   bottom:0;
@@ -29,7 +29,7 @@ h1 {
 }
 
 #header {
-  position: sticky;
+  position: relative;
   top:0px;
   margin-top: 10vw;
   text-align: center;
@@ -41,7 +41,7 @@ h1 {
 }
 
 #content-background {
-  position: sticky;
+  position: relative;
   top:0;
   left:0;
   background-color: white;
@@ -126,7 +126,7 @@ a {
 }
 
 #swipe {
-  text-shadow: 2px 2px 8px #e518f0;
+  text-shadow: 2px 2px 5px #e518f0;
   color: #c8a9e8;
   margin-top: 20vh;
   margin-bottom: 15vh;
