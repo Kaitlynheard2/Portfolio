@@ -127,12 +127,7 @@ a {
   transition:0.2s linear;
 }
 
-#swipe {
-  text-shadow: 2px 2px 5px #e518f0;
-  color: #c8a9e8;
-  margin-top: 20vh;
-  margin-bottom: 15vh;
-}
+
 
 #profile-img {
   width: 200px;
@@ -331,5 +326,6 @@ h2{
 h1{
   font-size:15vw;
 }
+
 
 }
