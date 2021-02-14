@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <title></title>
+</head>
+
+<body>
+  <div id="set-height"></div>
+  <video id="v0" tabindex="0" , autobuffer preload>
+    <source type='video/mp4' src="background video_final.mp4">
+  </video>
+
+  <section id='lift-content'>
+    <div>
+      <h1 id='header'>KAITLYN HEARD</h1>
+      <h4 id='swipe'>Swipe Up</h4>
+    </div>
+
+    <section id='content-background'>
+      <div id='about'>
+        <h2 data-aos="fade-up" class="margin-title">About Kaitlyn</h2>
+        <p id='about-size' data-aos="fade-up" class='background_color'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu ex at felis venenatis vestibulum. Nullam vitae neque felis. Maecenas pharetra lacus ut auctor congue. Nunc
+          ut augue nec
+          tellus faucibus faucibus. Sed quis nibh dui. Vestibulum a enim sem. Etiam luctus feugiat sollicitudin. Praesent at leo ac lorem tempor aliquet. Sed nulla turpis, suscipit vitae suscipit vitae, sollicitudin sit amet lorem. Nunc vitae ex
+          arcu. Curabitur et pharetra est. Integer pharetra a velit iaculis suscipit. Phasellus ac ligula eros. Nam dapibus erat vitae fermentum eleifend. Quisque id nibh convallis, interdum sapien sit amet, placerat enim.</p>
+
+        <img id="profile-img" data-aos="zoom-in-up" src='portfolio-pic.jpeg'></img>
+      </div>
+
+      <h2 data-aos="fade-up" class="center margin-title">UX/UI Projects</h2>
+
+      <h3 data-aos="fade-right" class="titles-left center">APPS</h3>
+      <div data-aos="fade-right" class='block-left block'>
+
+        <video class="content-size hover" autoplay muted loop>
+          <source src="chatbite/chatBite prototype rough draft 3.mp4" type='video/mp4'>
+        </video>
+        <div class='hide border description background_color centered'>
+          <a href="chatbite.html">
+            <p data-aos="fade-up" class='pages'>Chat Bite</p>
+          </a>
+        </div>
+
+      </div>
+
+      <h3 data-aos="fade-left" class='titles-right center'>WEBSITES</h3>
+      <div data-aos="fade-left" class='block-right block'>
+
+        <video class="content-size" autoplay muted loop>
+          <source src="website.mp4" type='video/mp4'>
+        </video>
+        <div class='border description background_color centered'>
+          <a>
+            <p data-aos="fade-up" class='pages'>Algorave</p>
+          </a>
+          <a>
+            <p data-aos="fade-up" class='pages'>Influencers</p>
+          </a>
+          <a>
+            <p data-aos="fade-up" class='pages'>Out Of My Mind</p>
+          </a>
+          <a>
+            <p data-aos="fade-up" class='pages'>Swiss Design</p>
+          </a>
+          <a>
+            <p data-aos="fade-up" class='pages'>Animation</p>
+          </a>
+        </div>
+      </div>
+
+
+      <h2 data-aos="fade-up" class="center margin-title">Passion Projects</h2>
+
+      <h3 data-aos="fade-right" class='titles-left center'>DIGITAL</h3>
+      <div data-aos="fade-right" class='block-left block'>
+
+        <video class="content-size" autoplay muted loop>
+          <source src="digital.mp4" type='video/mp4'>
+        </video>
+        <div class='border description background_color centered'>
+          <a>
+            <p data-aos="fade-up" class='pages'>Big Brain Time</p>
+          </a>
+          <a>
+            <p data-aos="fade-up" class='pages'>Algorave #1</p>
+          </a>
+          <a>
+            <p data-aos="fade-up" class='pages'>Dystopian Hologram Content</p>
+          </a>
+        </div>
+      </div>
+
+
+
+      <h3 data-aos="fade-left" class='titles-right center'>ANALOG</h3>
+      <div data-aos="fade-left" class='block-right block'>
+
+        <video class="content-size" autoplay muted loop>
+          <source src="analog.mp4" type='video/mp4'>
+        </video>
+        <div class='border description background_color centered'>
+          <a>
+            <p data-aos="fade-up" class='pages'>3D Printed Pill Box</p>
+          </a>
+          <a>
+            <p data-aos="fade-up" class='pages'>Dystopian Hologram</p>
+          </a>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section data-aos="zoom-out" id="contact">
+      <h2 class="center contact-kaitlyn">Contact Kaitlyn</h2>
+      <h4 class="contact-kaitlyn">For any business inquiries or if you're just interested in my work, leave your name, email and message down below.</h4>
+
+      <div class='contact-form center'>
+        <form id="contact-form" method="post" action="contact-form.php">
+          <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+          <input name="email" type="text" class="form-control" placeholder="Your Email" required>
+          <textarea name="message" class="form-control" placeholder="Message" row="5" required></textarea><br>
+          <input type="submit" class="form-submit submit" value="SEND">
+        </form>
+    </section>
+
+
+    <div class="icons">
+      <p class="center text-margin">Copyright Kaitlyn Heard 2020</p>
+    </div>
+
+
+  </section>
+
+
+  <script src="sticky.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    var frameNumber = 0, // start video at frame 0
+      // lower numbers = faster playback
+      playbackConst = 800,
+      // get page height from video duration
+      setHeight = document.getElementById("set-height"),
+      // select video element
+      vid = document.getElementById('v0');
+    // var vid = $('#v0')[0]; // jquery option
+
+    // dynamically set the page height according to video length
+    vid.addEventListener('loadedmetadata', function() {
+      setHeight.style.height = Math.floor(vid.duration - 300) * playbackConst + "px";
+    });
+
+    // Use requestAnimationFrame for smooth playback
+    function scrollPlay() {
+      var frameNumber = window.pageYOffset / playbackConst;
+      vid.currentTime = frameNumber;
+      window.requestAnimationFrame(scrollPlay);
+    }
+    window.requestAnimationFrame(scrollPlay);
+
+    AOS.init();
+  </script>
+</body>
+
+</html>
