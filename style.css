@@ -2,6 +2,8 @@
 
 body,html {
   background-image: url('background-test.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: 'Righteous', cursive;
   color: white;
   box-sizing: border-box;
@@ -46,7 +48,7 @@ h1 {
   left:0;
   background-color: white;
   width: 100%;
-  padding-bottom: 600px;
+  padding-bottom: 100px;
 
 }
 
@@ -232,7 +234,7 @@ form {
 }
 
 #contact {
-  position: absolute;
+  position: relative;
   background-color: #c8a9e8;
   /*box-shadow:2px 2px 8px #e518f0;*/
   padding-top:50px;
@@ -297,13 +299,10 @@ textarea {
   height:500px;
 }
 
-.text-margin{
-  margin-top:100px;
-  color:white;
-}
 
-.icons{
-  margin-top:100;
+.copyright{
+  margin:100px;
+  color: #c8a9e8;
 }
 
 @keyframes position-in {
